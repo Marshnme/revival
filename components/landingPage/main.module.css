@@ -1,0 +1,47 @@
+.landingMain {
+    min-width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.megatron {
+    background-image: url('../../public/james-barr-medium.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.megatron h1 {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+}
+
+.landingMain section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.landingMain section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.landingMain section a {
+    margin-top: 1rem;
+}
+
+.landingMain section button {
+    padding: .5rem 2rem;
+    cursor: pointer;
+}
