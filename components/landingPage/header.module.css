@@ -13,9 +13,19 @@
     align-items: center;
 }
 
+
 .landingHeader ul li {
-    text-decoration: none;
     list-style-type: none;
     margin-left: 1rem;
     cursor: pointer;
+    color: white;
+}
+
+.landingHeader ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.linkActive {
+    border-bottom: 1px solid white;
 }

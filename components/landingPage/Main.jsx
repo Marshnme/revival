@@ -33,7 +33,7 @@ const Main = () => {
 					href="https://en.wikipedia.org/wiki/Christian_revival"
 				></a>
 			</section>
-			<section className={styles.contactSection}>
+			<section id="contact" className={styles.contactSection}>
 				<h3>Contact Us</h3>
 				<form action="">
 					<input

@@ -1,8 +1,13 @@
 import styles from '@/components/landingPage/header.module.css';
 import closedBible from '../../public/Closed_Bible.svg';
 import Image from 'next/image';
+import Link from 'next/Link';
+import { useRouter } from 'next/router';
 
 const Header = () => {
+	const router = useRouter();
+	const currentRoute = router.pathname;
+	const currentPath = router.asPath;
 	return (
 		<header className={styles.landingHeader}>
 			<nav>
@@ -13,10 +18,40 @@ const Header = () => {
 					height={40}
 				/>
 				<ul>
-					<li>Home</li>
-					<li>About</li>
-					<li>Contacts</li>
-					<li>Revivals</li>
+					<li
+						className={
+							currentPath === '/' ? `${styles.linkActive}` : null
+						}
+					>
+						<Link href="/">Home</Link>
+					</li>
+					<li
+						className={
+							currentPath === '/about'
+								? `${styles.linkActive}`
+								: null
+						}
+					>
+						<Link href="/about">About</Link>
+					</li>
+					<li
+						className={
+							currentPath === '/#contact'
+								? `${styles.linkActive}`
+								: null
+						}
+					>
+						<Link href="#contact">Contacts</Link>
+					</li>
+					<li
+						className={
+							currentPath === '/revivals'
+								? `${styles.linkActive}`
+								: null
+						}
+					>
+						<Link href="/revivals">Revivals</Link>
+					</li>
 				</ul>
 			</nav>
 		</header>
