@@ -86,3 +86,24 @@
 .landingMain .secondSection {
     background-color: #333333;
 }
+
+.contactSection form {
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 80%;
+    align-items: center;
+}
+
+.contactSection input,
+.contactSection textarea {
+    margin: 1rem 0rem;
+    color: wheat;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 150%;
+}
+
+.contactSection textarea {
+    resize: none;
+}

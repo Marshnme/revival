@@ -31,19 +31,38 @@ const Main = () => {
 					target="_blank"
 					rel="noreferrer"
 					href="https://en.wikipedia.org/wiki/Christian_revival"
-				>
-					<button>More Info</button>
-				</a>
+				></a>
 			</section>
-			<section>
+			<section className={styles.contactSection}>
 				<h3>Contact Us</h3>
 				<form action="">
-					<label htmlFor="">Name: </label>
-					<input type="text" placeholder="John Doe" />
+					<input
+						required
+						type="text"
+						id="name"
+						placeholder="Enter your Name"
+					/>
+
+					<input
+						required
+						type="email"
+						id="email"
+						placeholder="Enter your Email"
+					/>
+
+					<textarea
+						required
+						maxLength={500}
+						name="message"
+						id="message"
+						cols="30"
+						rows="10"
+						placeholder="Enter your message"
+					></textarea>
+					<a>
+						<button type="submit">Send</button>
+					</a>
 				</form>
-				<a>
-					<button>Contact</button>
-				</a>
 			</section>
 		</main>
 	);
