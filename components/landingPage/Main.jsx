@@ -1,25 +1,31 @@
 import styles from '@/components/landingPage/main.module.css';
-
+import { FaPrayingHands } from 'react-icons/fa';
+import { FaChurch } from 'react-icons/fa';
 const Main = () => {
 	return (
 		<main className={styles.landingMain}>
 			<div className={styles.megatron}>
 				<h1>Find a Revival</h1>
+				<p>
+					Craving an Asbury like Revival in your area? Find or create
+					an event near you!
+				</p>
+				<button className={styles.megatronButton}>Signup/Login</button>
 			</div>
 			<section>
-				<h3>Our Mission</h3>
+				<h3>Connect</h3>
+				<FaPrayingHands className={styles.sectionIcons} />
 				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-					Fugit doloremque error distinctio porro praesentium, hic ad
-					dolorem rem quibusdam omnis?
+					Find a group of others in your area who want to worship,
+					pray, and grow closer to God.
 				</p>
 			</section>
-			<section>
-				<h3>History of Revivals</h3>
+			<section className={styles.secondSection}>
+				<h3>Host</h3>
+				<FaChurch className={styles.sectionIcons} />
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Illo sit in possimus modi mollitia praesentium obcaecati
-					assumenda cupiditate culpa alias!
+					Do you feel the Holy Spirit urging you to help this movement
+					grow? Host a location for others to come and worship God.
 				</p>
 				<a
 					target="_blank"
@@ -31,11 +37,10 @@ const Main = () => {
 			</section>
 			<section>
 				<h3>Contact Us</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Tenetur error dicta commodi cupiditate, earum totam. Ab
-					maiores ullam voluptas ratione?
-				</p>
+				<form action="">
+					<label htmlFor="">Name: </label>
+					<input type="text" placeholder="John Doe" />
+				</form>
 				<a>
 					<button>Contact</button>
 				</a>

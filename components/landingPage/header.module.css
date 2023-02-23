@@ -2,15 +2,20 @@
 .landingHeader ul {
     display: flex;
     justify-content: space-between;
+    font-size: 1.3rem;
 }
 
 .landingHeader nav {
     margin: 0 auto;
     padding: 1.5rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .landingHeader ul li {
     text-decoration: none;
     list-style-type: none;
     margin-left: 1rem;
+    cursor: pointer;
 }

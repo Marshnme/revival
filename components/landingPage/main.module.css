@@ -13,28 +13,64 @@
     width: 100%;
     height: 70vh;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    mix-blend-mode: hard-light
 }
 
 .megatron h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-top: 5rem;
 }
+
+.megatron p {
+    width: 60%;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.megatronButton {
+    margin-top: 1.5rem;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    font-size: 1.1rem;
+}
+
+.megatronButton:hover {
+    transform: scale(1.05);
+
+}
+
+
 
 .landingMain section {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
-    width: 90%;
+    width: 100%;
+    /* height: 100%; */
     text-align: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    border: 1px solid black;
+    padding: 5rem;
+    background-color: #1a1a1a;
+    align-items: center;
+
+}
+
+.sectionIcons {
+    width: 10%;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 .landingMain section h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+.landingMain section p {
+    font-size: 1.2rem;
 }
 
 .landingMain section a {
@@ -44,4 +80,9 @@
 .landingMain section button {
     padding: .5rem 2rem;
     cursor: pointer;
+}
+
+
+.landingMain .secondSection {
+    background-color: #333333;
 }
