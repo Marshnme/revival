@@ -107,3 +107,11 @@
 .contactSection textarea {
     resize: none;
 }
+
+
+.contactSection .FAQLink {
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    margin-top: 3rem;
+}

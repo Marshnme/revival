@@ -1,4 +1,5 @@
 import styles from '@/components/landingPage/main.module.css';
+import Link from 'next/link';
 import { FaPrayingHands } from 'react-icons/fa';
 import { FaChurch } from 'react-icons/fa';
 const Main = () => {
@@ -63,6 +64,9 @@ const Main = () => {
 						<button type="submit">Send</button>
 					</a>
 				</form>
+				<Link className={styles.FAQLink} href="/about">
+					Questions? Click here for our F.A.Q
+				</Link>
 			</section>
 		</main>
 	);

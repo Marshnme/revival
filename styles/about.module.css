@@ -1,0 +1,41 @@
+.aboutMain {
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.aboutMain section {
+    margin: 0 auto;
+    width: 80%;
+    padding: 1rem;
+}
+
+.aboutMain h2 {
+    margin: 0 auto;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid white;
+    width: 10rem;
+
+}
+
+.aboutMain p {
+    font-size: 1.2rem;
+}
+
+.aboutMain .faqSection {
+    margin-top: 2rem;
+}
+
+.faqSection blockquote {
+    font-size: 1.1rem;
+}
+
+.FAQ li {
+    font-size: 2rem;
+}
+
+
+.FAQ * {
+    padding: 1rem;
+}

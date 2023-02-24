@@ -8,6 +8,12 @@ const Header = () => {
 	const router = useRouter();
 	const currentRoute = router.pathname;
 	const currentPath = router.asPath;
+	function toContactForm() {
+		if (currentPath === '/') {
+			return;
+		}
+		router.push('/');
+	}
 	return (
 		<header className={styles.landingHeader}>
 			<nav>
@@ -41,16 +47,9 @@ const Header = () => {
 								: null
 						}
 					>
-						<Link href="#contact">Contacts</Link>
-					</li>
-					<li
-						className={
-							currentPath === '/revivals'
-								? `${styles.linkActive}`
-								: null
-						}
-					>
-						<Link href="/revivals">Revivals</Link>
+						<Link onClick={toContactForm} href="#contact">
+							Contacts
+						</Link>
 					</li>
 				</ul>
 			</nav>
