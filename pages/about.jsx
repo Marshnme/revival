@@ -19,11 +19,8 @@ const About = () => {
 					<h2>F.A.Q</h2>
 					<ul className={styles.FAQ}>
 						<li>Denominations?</li>
-						<p>
-							I think with these specific events denominations
-							should be left out of the picture. Jesus says,
-						</p>
-						<blockquote>
+
+						<quote>
 							"My prayer is not for them alone. I pray also for
 							those who will believe in me through their message,
 							that all of them may be one, Father, just as you are
@@ -35,7 +32,7 @@ const About = () => {
 							Then the world will know that you sent me and have
 							loved them even as you have loved me." John 17:20-23
 							NIV
-						</blockquote>
+						</quote>
 						<p>
 							So, lets use these events to come together as one.
 							Worshipping, praising, singing, and confessing to
@@ -55,7 +52,7 @@ const About = () => {
 						<p>
 							Just like with any website I encourage you to
 							practice being safe. Let people know where you will
-							be going, double check addresses.
+							be going, double check addresses, etc.
 						</p>
 						<li>Cost?</li>
 						<p>

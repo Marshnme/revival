@@ -8,12 +8,7 @@ const Header = () => {
 	const router = useRouter();
 	const currentRoute = router.pathname;
 	const currentPath = router.asPath;
-	function toContactForm() {
-		if (currentPath === '/') {
-			return;
-		}
-		router.push('/');
-	}
+
 	return (
 		<header className={styles.landingHeader}>
 			<nav>
@@ -47,9 +42,7 @@ const Header = () => {
 								: null
 						}
 					>
-						<Link onClick={toContactForm} href="#contact">
-							Contacts
-						</Link>
+						<Link href="/#contact">Contact</Link>
 					</li>
 				</ul>
 			</nav>

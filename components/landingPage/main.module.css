@@ -115,3 +115,7 @@
     color: white;
     margin-top: 3rem;
 }
+
+.contactSection .FAQLink:hover {
+    scale: 1.05;
+}
