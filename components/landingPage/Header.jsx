@@ -1,7 +1,7 @@
 import styles from '@/components/landingPage/header.module.css';
 import closedBible from '../../public/Closed_Bible.svg';
 import Image from 'next/image';
-import Link from 'next/Link';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const Header = () => {
@@ -43,6 +43,15 @@ const Header = () => {
 						}
 					>
 						<Link href="/#contact">Contact</Link>
+					</li>
+					<li
+						className={
+							currentPath === '/signup'
+								? `${styles.linkActive}`
+								: null
+						}
+					>
+						<Link href="/signup">Signup</Link>
 					</li>
 				</ul>
 			</nav>

@@ -1,0 +1,30 @@
+.signupBox {
+    width: 80%;
+    margin: 0 auto;
+    color: black;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 5rem;
+}
+
+.signupForm div {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: .4rem;
+}
+
+.signupForm div * {
+    padding: .1rem;
+    margin: .1rem;
+}
+
+.signupForm .signupButtonContainer {
+    display: flex;
+    align-items: center;
+}
+
+.signupButtonContainer button {
+    padding: .5rem 2rem;
+}

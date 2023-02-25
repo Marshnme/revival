@@ -1,0 +1,30 @@
+.loginBox {
+    width: 80%;
+    margin: 0 auto;
+    color: black;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 5rem;
+}
+
+.loginForm div {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: .4rem;
+}
+
+.loginForm div * {
+    padding: .1rem;
+    margin: .1rem;
+}
+
+.loginForm .loginButtonContainer {
+    display: flex;
+    align-items: center;
+}
+
+.loginButtonContainer button {
+    padding: .5rem 2rem;
+}

@@ -11,7 +11,11 @@ const Main = () => {
 					Craving an Asbury like Revival in your area? Find or create
 					an event near you!
 				</p>
-				<button className={styles.megatronButton}>Signup/Login</button>
+				<Link href={'/signup'}>
+					<button className={styles.megatronButton}>
+						Signup Now!
+					</button>
+				</Link>
 			</div>
 			<section>
 				<h3>Connect</h3>
