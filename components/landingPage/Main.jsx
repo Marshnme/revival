@@ -6,7 +6,7 @@ const Main = () => {
 	return (
 		<main className={styles.landingMain}>
 			<div className={styles.megatron}>
-				<h1>Find a Revival</h1>
+				<h1>Join the Revival</h1>
 				<p>
 					Craving an Asbury like Revival in your area? Find or create
 					an event near you!

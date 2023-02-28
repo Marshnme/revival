@@ -11,8 +11,7 @@ const About = () => {
 					<p>
 						Following a nudge from the Holy Spirit, im doing my best
 						to try and continue the beautiful movement at Asbury
-						into other colleges and Churches alike. I wholeheartedly
-						believe that Jesus is who the world needs.
+						into other colleges and Churches alike.
 					</p>
 				</section>
 				<section className={styles.faqSection}>
@@ -44,9 +43,9 @@ const About = () => {
 						</p>
 						<li>Leadership?</li>
 						<p>
-							Some events will be more scheduled, others will be
-							spontaneous or more loose in nature. This is up to
-							the event cordinator(s) themselves.
+							This is up to the event cordinator(s) themselves.
+							The event posting will have details about the event.
+							If there will be sermons, just worship, etc.
 						</p>
 						<li>Safety?</li>
 						<p>

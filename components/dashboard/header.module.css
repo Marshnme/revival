@@ -1,26 +1,27 @@
-.landingHeader nav,
-.landingHeader ul {
+.dashHeader nav,
+.dashHeader ul {
     display: flex;
     justify-content: space-between;
     font-size: 1.3rem;
 }
 
-.landingHeader nav {
+.dashHeader nav {
     padding: 1.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 
-.landingHeader ul li {
+
+.listParent li {
     list-style-type: none;
-    margin-left: 1rem;
     cursor: pointer;
-    color: white;
+    margin-left: 1rem;
+
 }
 
-.landingHeader ul li a {
+.listParent li a {
     text-decoration: none;
     color: white;
 }
