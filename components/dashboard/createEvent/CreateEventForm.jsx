@@ -1,40 +1,51 @@
-import styles from '@/components/dashboard/createEvent/CreateEventForm.module.css';
+import styles from '@/components/dashboard/createEvent/createEventForm.module.css';
 const CreateEventForm = () => {
 	return (
-		<>
-			<form>
-				<label htmlFor="">Location</label>
+		<form className={styles.createEventForm}>
+			<div>
+				<label htmlFor="">Location:</label>
 				<input type="text" placeholder="City, State" />
-				<label htmlFor="">address</label>
+			</div>
+			<div>
+				<label htmlFor="">Address:</label>
 				<input type="text" placeholder="address" />
-				<label htmlFor="startTime">Start Time</label>
+			</div>
+			<div>
+				<label htmlFor="startTime">Start Time:</label>
 				<input id="startTime" type="time" />
-				<label htmlFor="endTime">End Time</label>
+				<label htmlFor="endTime">End Time:</label>
 				<input id="endTime" type="time" />
+			</div>
+			<div>
 				<p>Days event is active:</p>
 
 				<input type="checkbox" name="monday" id="monday" />
-				<label htmlFor="monday">monday</label>
+				<label htmlFor="monday">Monday</label>
 				<input type="checkbox" name="tuesday" id="tuesday" />
-				<label htmlFor="tuesday">tuesday</label>
+				<label htmlFor="tuesday">Tuesday</label>
 				<input type="checkbox" name="wednesday" id="wednesday" />
-				<label htmlFor="wednesday">wednesday</label>
+				<label htmlFor="wednesday">Wednesday</label>
 				<input type="checkbox" name="thursday" id="thursday" />
-				<label htmlFor="thursday">thursday</label>
+				<label htmlFor="thursday">Thursday</label>
 				<input type="checkbox" name="friday" id="friday" />
-				<label htmlFor="friday">friday</label>
+				<label htmlFor="friday">Friday</label>
 				<input type="checkbox" name="saturday" id="saturday" />
-				<label htmlFor="saturday">saturday</label>
-
-				<label htmlFor="">event description</label>
+				<label htmlFor="saturday">Saturday</label>
+			</div>
+			<div className={styles.eventDescriptionContainer}>
+				<label htmlFor="">Event Description:</label>
 
 				<textarea
 					className={styles.eventDescription}
 					type="text"
-					placeholder="description"
+					placeholder="Description"
+					rows="5"
+					cols="30"
 				/>
-			</form>
-		</>
+			</div>
+
+			<button className={styles.submitEventButton}>Submit Event</button>
+		</form>
 	);
 };
 
