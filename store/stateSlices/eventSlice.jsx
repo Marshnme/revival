@@ -7,7 +7,7 @@ const initialState = {
 };
 
 const eventSlice = createSlice({
-	name: 'event',
+	name: 'events',
 	initialState,
 	reducers: {
 		getAllEvents(state, action) {
