@@ -1,6 +1,13 @@
 import styles from '@/components/dashboard/createEvent/createEventForm.module.css';
 import { useRef } from 'react';
+import { useDispatch } from 'react-redux';
+import { eventActions } from '@/store/stateSlices/eventSlice';
+import { useRouter } from 'next/router';
+
 const CreateEventForm = () => {
+	const router = useRouter();
+	const dispatch = useDispatch();
+
 	const locationRef = useRef();
 	const addressRef = useRef();
 	const startTimeRef = useRef();
@@ -15,11 +22,37 @@ const CreateEventForm = () => {
 
 	function submitHandler(event) {
 		event.preventDefault();
-		console.log(locationRef.current.value);
-		console.log(startTimeRef.current.value);
-		console.log(endTimeRef.current.value);
-		console.log(monRef.current.checked);
-		console.log(descRef.current.value);
+
+		const enteredlocation = locationRef.current.value;
+		const enteredaddress = addressRef.current.value;
+		const enteredStartTime = startTimeRef.current.value;
+		const enteredEndTime = endTimeRef.current.value;
+		const enteredMon = monRef.current.checked;
+		const enteredTue = tueRef.current.checked;
+		const enteredWed = wedRef.current.checked;
+		const enteredThur = thurRef.current.checked;
+		const enteredFri = friRef.current.checked;
+		const enteredSat = satRef.current.checked;
+		const enteredDesc = descRef.current.value;
+
+		const newEventData = {
+			location: enteredlocation,
+			address: enteredaddress,
+			startTime: enteredStartTime,
+			endTime: enteredEndTime,
+			daysActive: {
+				monday: enteredMon,
+				tuesday: enteredTue,
+				wednesday: enteredWed,
+				thursday: enteredThur,
+				friday: enteredFri,
+				saturday: enteredSat,
+			},
+			description: enteredDesc,
+		};
+
+		dispatch(eventActions.addEvent(newEventData));
+		router.push('/auth/dashboard');
 	}
 
 	return (
