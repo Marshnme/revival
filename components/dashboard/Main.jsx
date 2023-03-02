@@ -1,5 +1,6 @@
 import styles from '@/components/dashboard/main.module.css';
 import { useSelector } from 'react-redux';
+import EventItem from './EventItem';
 
 const Main = () => {
 	const allEvents = useSelector((state) => {
@@ -21,7 +22,8 @@ const Main = () => {
 					<h1>NO EVENTS</h1>
 				) : (
 					allEvents.map((item) => {
-						return <p key={item.desc}>{item.location}</p>;
+						// Change key to id
+						return <EventItem key={item.description} item={item} />;
 					})
 				)}
 			</main>
