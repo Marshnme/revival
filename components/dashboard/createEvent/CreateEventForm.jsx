@@ -40,14 +40,16 @@ const CreateEventForm = () => {
 			address: enteredaddress,
 			startTime: enteredStartTime,
 			endTime: enteredEndTime,
-			daysActive: {
-				monday: enteredMon,
-				tuesday: enteredTue,
-				wednesday: enteredWed,
-				thursday: enteredThur,
-				friday: enteredFri,
-				saturday: enteredSat,
-			},
+			daysActive: [
+				{
+					monday: enteredMon,
+					tuesday: enteredTue,
+					wednesday: enteredWed,
+					thursday: enteredThur,
+					friday: enteredFri,
+					saturday: enteredSat,
+				},
+			],
 			description: enteredDesc,
 		};
 
