@@ -9,7 +9,7 @@ const Main = () => {
 
 	return (
 		<>
-			<main>
+			<main className={styles.dashMain}>
 				<section className={styles.searchBar}>
 					<form action="">
 						<input type="text" placeholder="City, State" />
@@ -18,6 +18,7 @@ const Main = () => {
 				</section>
 				{/*if search results returns events, display events */}
 				{/* if no events, display 'hottest events' text */}
+
 				{allEvents.length === 0 ? (
 					<h1>NO EVENTS</h1>
 				) : (

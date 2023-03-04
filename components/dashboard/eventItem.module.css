@@ -1,0 +1,50 @@
+.eventParent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border: 1px solid white;
+    background-color: black;
+    width: 90%;
+    max-width: 40rem;
+
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+
+.leftSection {
+    width: 50%;
+
+}
+
+.leftSection * {
+    padding: .2rem 0rem;
+}
+
+.eventDesc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.rightSection {
+    border-left: 1px solid white;
+    padding-left: 2rem;
+    height: 100%;
+
+}
+
+.rightSection * {
+    padding: .2rem;
+}
+
+.rightSection:first-child,
+.rightSection:last-child {
+    padding: 1rem;
+}

@@ -1,12 +1,17 @@
+import styles from '@/components/dashboard/eventItem.module.css';
+
 const EventItem = ({ item }) => {
 	console.log(item);
 	return (
-		<section>
-			<p>{item.description}</p>
-			<p>{item.address}</p>
-			<p>Start Time: {item.startTime}</p>
-			<p>End Time: {item.endTime}</p>
-			<section>
+		<section className={styles.eventParent}>
+			<div className={styles.leftSection}>
+				<p>{item.title}</p>
+				<p className={styles.eventDesc}>{item.description}</p>
+				<p>{item.address}</p>
+				<p>Start Time: {item.startTime}</p>
+				<p>End Time: {item.endTime}</p>
+			</div>
+			<div className={styles.rightSection}>
 				{item.daysActive.map((newItem) => {
 					return (
 						<>
@@ -62,7 +67,7 @@ const EventItem = ({ item }) => {
 						</>
 					);
 				})}
-			</section>
+			</div>
 		</section>
 	);
 };

@@ -8,6 +8,7 @@ const CreateEventForm = () => {
 	const router = useRouter();
 	const dispatch = useDispatch();
 
+	const titleRef = useRef();
 	const locationRef = useRef();
 	const addressRef = useRef();
 	const startTimeRef = useRef();
@@ -23,6 +24,7 @@ const CreateEventForm = () => {
 	function submitHandler(event) {
 		event.preventDefault();
 
+		const enteredTitle = titleRef.current.value;
 		const enteredlocation = locationRef.current.value;
 		const enteredaddress = addressRef.current.value;
 		const enteredStartTime = startTimeRef.current.value;
@@ -36,6 +38,7 @@ const CreateEventForm = () => {
 		const enteredDesc = descRef.current.value;
 
 		const newEventData = {
+			title: enteredTitle,
 			location: enteredlocation,
 			address: enteredaddress,
 			startTime: enteredStartTime,
@@ -59,6 +62,15 @@ const CreateEventForm = () => {
 
 	return (
 		<form onSubmit={submitHandler} className={styles.createEventForm}>
+			<div>
+				<label htmlFor="">Title:</label>
+				<input
+					required
+					type="text"
+					placeholder="Title"
+					ref={titleRef}
+				/>
+			</div>
 			<div>
 				<label htmlFor="">Location:</label>
 				<input
