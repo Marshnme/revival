@@ -1,4 +1,5 @@
 import styles from '@/components/dashboard/createEvent/createEventForm.module.css';
+
 import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { eventActions } from '@/store/stateSlices/eventSlice';
